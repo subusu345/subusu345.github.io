@@ -1,0 +1,237 @@
+.aa {
+  position: relative;
+  perspective: 2000px;
+
+
+
+}
+
+.bb {
+  position: relative;
+  transform-style: preserve-3d;
+  top: 850px;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 300px;
+  height: 100px;
+
+}
+
+.a1 {
+  position: absolute;
+  height: 100px;
+  transform: translateZ(100px);
+  top: 0px;
+  left: 10px;
+  animation: i 10s infinite alternate;
+
+}
+
+.a2 {
+  position: absolute;
+  height: 100px;
+  transform: translateZ(100px);
+  top: 0px;
+  left: 135px;
+  animation: t 10s infinite alternate;
+
+}
+
+.a3 {
+  position: absolute;
+  height: 100px;
+  transform: translateZ(100px);
+  top: 0px;
+  left: 250px;
+  animation: m 10s infinite alternate;
+
+}
+
+.a {
+  position: absolute;
+
+
+  /* transform: translate(-50%, -50%); */
+}
+
+.a::-webkit-media-controls {
+  display: none !important;
+}
+
+.b {
+  position: absolute;
+  z-index: 10;
+  top: 1000px;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 150px;
+  height: 50px;
+  background-color: #79bce9;
+  /* 背景透明 */
+  border: none;
+  /* 无边框 */
+  color: #0808e8;
+  border-radius: 10%;
+  /* 文字颜色 */
+
+}
+
+
+
+
+
+
+.b:focus~.bb {
+  top: -1000px;
+  transition: all, 2s;
+}
+
+.b:focus {
+  background: transparent;
+  /* 背景透明 */
+  border: none;
+  /* 无边框 */
+  color: transparent;
+  /* 文字颜色 */
+}
+
+
+
+
+
+@keyframes i {
+  0% {
+    transform: rotateY(-40deg)
+  }
+
+
+
+  10% {
+    transform: rotateY(-30deg)
+  }
+
+  20% {
+    transform: rotateY(-20deg)
+  }
+
+  30% {
+    transform: rotateY(-10deg)
+  }
+
+
+
+  40% {
+    transform: rotateY(0deg)
+  }
+
+  50% {
+    transform: rotateY(10deg)
+  }
+
+
+
+  60% {
+    transform: rotateY(20deg)
+  }
+
+  70% {
+    transform: rotateY(30deg)
+  }
+
+  80% {
+    transform: rotateY(40deg)
+  }
+
+  90% {
+    transform: rotateY(50deg)
+  }
+
+
+
+  100% {
+    transform: rotateY(60deg)
+  }
+
+
+
+
+
+}
+
+@keyframes t {
+  0% {
+    transform: rotateY(0deg)
+  }
+
+
+
+  16% {
+    transform: rotateY(30deg)
+  }
+
+  32% {
+    transform: rotateY(60deg)
+  }
+
+  48% {
+    transform: rotateY(30deg)
+  }
+
+
+
+  64% {
+    transform: rotateY(0deg)
+  }
+
+  80% {
+    transform: rotateY(-30deg)
+  }
+
+  96% {
+    transform: rotateY(-60deg)
+  }
+
+
+  100% {
+    transform: rotateY(-70deg)
+  }
+
+
+
+
+
+
+}
+
+@keyframes m {
+  0% {
+    transform: rotateY(-25deg)
+  }
+
+
+
+  25% {
+    transform: rotateY(0deg)
+  }
+
+  50% {
+    transform: rotateY(25deg)
+  }
+
+  75% {
+    transform: rotateY(50deg)
+  }
+
+  100% {
+    transform: rotateY(25deg)
+  }
+
+
+
+
+
+
+
+
+
+}
